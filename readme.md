@@ -6,7 +6,7 @@ Provides a S3 bucket for storage of state and DynamoDB table for locking.
 
 In solutions that will utilise the stroage and locking facility, add the following `backend.tf` along with solution's Terraform and modify the `project-name` as appropriate. Note: Terraform state facilities are in `eu-west-2`.
 
-```
+```terraform
 terraform {
   backend "s3" {
     key            = "{project-name}/terraform.tfstate"
